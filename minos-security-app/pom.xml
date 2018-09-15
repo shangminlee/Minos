@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>minos-parent</artifactId>
+        <groupId>com.xxx.minos</groupId>
+        <version>${minos.version}</version>
+        <relativePath>../minos-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>minos-security-app</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- owner -->
+        <dependency>
+            <groupId>com.xxx.minos</groupId>
+            <artifactId>minos-security-core</artifactId>
+            <version>${minos.version}</version>
+        </dependency>
+        <!-- session -->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session</artifactId>
+        </dependency>
+    </dependencies>
+</project>
